@@ -11,15 +11,12 @@
 
 </head>
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
-
-                    </ul>
+                   
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto" style>
+                    <ul style="list-style-type:none" >
                         <!-- Authentication Links -->
-                        Hello @guest
+                        Hello,  @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -95,8 +92,23 @@
       <input id="finalPrice" type="number" placeholder="Final price" disabled />
     </form>
     <p class="reference">Shipment reference:</p>
+    
     <p><a href="https://somlita.lt/">Somlitas webpage</a></p>
     <script src="{{asset('js/script.js')}}" ></script>
+    <button type="button" onclick="logIn()">LOGIN</button>
+
+<script>
+  // Note: This is only hard coded for example purposes, it should probably come from user input
+  // function logIn() {
+  //   if (a === 'Lukas') {
+  //     window.location = "https://www.google.com/";
+  //   }
+  // }
+
+  let c='Name';
+  console.log(c);
+</script>
+
 
 </body>
 </html>

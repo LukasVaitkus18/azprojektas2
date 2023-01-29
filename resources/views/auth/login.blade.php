@@ -5,6 +5,8 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+            <img src="img/DJI_0019-Edit-635x375.jpeg" alt="" />
+
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
