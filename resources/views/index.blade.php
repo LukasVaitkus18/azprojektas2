@@ -93,20 +93,34 @@
     </form>
     <p class="reference">Shipment reference:</p>
     
-    <p><a href="https://somlita.lt/">Somlitas webpage</a></p>
+    <!-- <p><a href="https://somlita.lt/">Somlitas webpage</a></p> -->
+    <button type="button" onclick="logIn()">Link</button>
     <script src="{{asset('js/script.js')}}" ></script>
-    <button type="button" onclick="logIn()">LOGIN</button>
 
 <script>
-  // Note: This is only hard coded for example purposes, it should probably come from user input
-  // function logIn() {
-  //   if (a === 'Lukas') {
-  //     window.location = "https://www.google.com/";
-  //   }
-  // }
+ 
+ let guest = "{{ Auth::user()->name }}";
 
-  let c='Name';
-  console.log(c);
+function logIn() {
+    if (guest === "Lukas") {
+        window.location = "https://www.google.com/";
+    } else if (guest === "Jonas") {
+        window.location = "https://www.delfi.lt/";
+    }
+    else if (guest === "Beatričė Šlyžiūtė") {
+        window.location = "https://www.youtube.com/";}
+
+        else if (guest === "Aividas") {
+        window.location = "https://somlita-my.sharepoint.com/:f:/g/personal/lukas_somlita_lt/Elm4t582PbdGhHiCAY5fJCsBbdffQ9_omCFBY9eDw3f3aw?e=r44yCU";}
+
+        else{
+          window.location = "https://somlita.lt/";
+        }
+        logIn();
+}
+// console.log(guest);
+
+
 </script>
 
 
