@@ -103,12 +103,12 @@
 
 function logIn() {
     if (guest === "Lukas") {
-        window.location = "https://www.google.com/";
+        window.location = "https://somlita-my.sharepoint.com/:f:/g/personal/lukas_somlita_lt/EoqtW77kiMdOgJ2sYAznrl8B3oXvgxwhtKnG2aA1r26esg?e=ZzbumE";
     } else if (guest === "Jonas") {
         window.location = "https://www.delfi.lt/";
     }
     else if (guest === "Beatričė Šlyžiūtė") {
-        window.location = "https://www.youtube.com/";}
+        window.location = "https://somlita-my.sharepoint.com/:f:/g/personal/lukas_somlita_lt/EqtjVuh-gJdCkf57L7p1o-YBiI_Aa3YtOg-51Uj4s3W8Ag?e=c4vWNR";}
 
         else if (guest === "Aividas") {
         window.location = "https://somlita-my.sharepoint.com/:f:/g/personal/lukas_somlita_lt/Elm4t582PbdGhHiCAY5fJCsBbdffQ9_omCFBY9eDw3f3aw?e=r44yCU";}
